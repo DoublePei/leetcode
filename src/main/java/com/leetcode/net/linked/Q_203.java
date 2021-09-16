@@ -21,12 +21,7 @@ public class Q_203 {
 
 
     public static void main(String[] args) {
-        ListNode listNode = new ListNode(1, new ListNode(2, new ListNode(3, new ListNode(4, null))));
 
-        Q_203 q_203 = new Q_203();
-
-
-        q_203.removeElement(listNode,2);
 
     }
     public ListNode removeElements(ListNode head, int val) {
@@ -35,7 +30,7 @@ public class Q_203 {
             return head;
         }
 
-        ListNode dummy = new ListNode(-1, head);
+        ListNode dummy = new ListNode(-1);
 
         ListNode pre = dummy;
         ListNode cur = head;
